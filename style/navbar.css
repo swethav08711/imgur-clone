@@ -3,9 +3,12 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 #nav_main {
   width: 100%;
-
+  position: fixed;
   padding: 10px 10px;
   display: flex;
   background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
@@ -67,6 +70,9 @@ body {
   background-color: transparent;
   border: none;
   color: darkgrey;
+}
+.input_container > input:focus {
+  outline: #1bb76e;
 }
 .input_container > img {
   width: 20px;
